@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+/*
+<button onclick="CheckPassword(inputtxt)">Try it</button>
+<p id="demo"></p>
+function CheckPassword(inputtxt)   
+{   
+ var paswd=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/; 
+ if(inputtxt.value.match(paswd))   
+{   
+ alert('Correct, try another...')  
+ return true; 
+ document.getElementById("demo").innerHTML =Boolean(paswd);
+}  
+else  
+{   
+ alert('Wrong...!')  
+ return false;  
+}  
+} 
+*/
+function phonenumber(inputtxt)  
+{  
+  var phoneno = /^\d{10}$/;  
+  if(inputtxt.value.match(phoneno))  
+  {  
+      return true;  
+  }  
+  else  
+  {  
+     alert("Not a valid Phone Number");  
+     return false;  
+  }  
+  }  
+</script>
+</body>
+</html>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

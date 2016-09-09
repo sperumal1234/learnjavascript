@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {    
+    var x = document.forms["myForm"]["mobile"].value;
+    if (x == null || x == "") {
+        alert("Mobile/Email must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+
+<body>
+
+<form name="myForm" action="form_action.asp" method="post">
+  Mobile Number/Email: <br>
+  <input type="text" name="mobile" value=""><br>
+  Password: <br>
+  <input type="password" name="pwd" value=""><br>
+  Forgot password? <br>
+  <input type="button" value="Login" onclick="return validateForm()"><br>
+  New user Signup here
+</form> 
+
+</body>
+</html>
